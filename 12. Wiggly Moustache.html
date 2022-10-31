@@ -1,0 +1,51 @@
+<div class="figure">
+  <div class="end end1"></div>
+  <div class="circle left"></div>
+  <div class="circle center"></div>
+  <div class="circle right"></div>
+  <div class="end end2"></div>
+</div>
+<style>
+  body {
+    background-color: #f5d6b4;
+    display: grid;
+    place-items: center;
+  }
+  .figure {
+    display: flex;
+    position: relative;
+  }
+  .circle {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    border-color: #d86f45 #d86f45 #f5d6b4 #f5d6b4;
+  }
+  .left {
+    transform: translate(20px) rotate(135deg);
+  }
+  .right {
+    transform: translate(-20px) rotate(135deg);
+  }
+  .center {
+    transform: rotate(-45deg);
+    z-index: 1;
+    mix-blend-mode: darken;
+  }
+  .end {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: #d86f45;
+
+    border-radius: 50vw 50vw 0 0;
+    z-index: 2;
+  }
+  .end1 {
+    transform: translate(20px, 40px);
+  }
+  .end2 {
+    transform: translate(260px, 40px);
+  }
+</style>

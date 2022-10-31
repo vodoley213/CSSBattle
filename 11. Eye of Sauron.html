@@ -1,0 +1,53 @@
+<div class="figure">
+  <div class="semi-circle left"></div>
+  <div class="circle">
+    <div class="circle-sm"></div>
+  </div>
+  <div class="semi-circle right"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #191210;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .figure {
+    display: flex;
+    align-items: center;
+  }
+  .semi-circle {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    border-color: #eca03d #191210 #191210 #eca03d;
+  }
+  .left {
+    transform: translate(20px, -8px) rotate(-135deg);
+  }
+  .right {
+    transform: translate(-20px, -8px) rotate(45deg);
+  }
+  .circle {
+    margin-top: -16px;
+    width: 140px;
+    aspect-ratio: 1;
+    background-color: #191210;
+    border: 20px solid #eca03d;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+  }
+  .circle-sm {
+    position: absolute;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #84271c;
+    transform: translate(50%, 50%);
+  }
+</style>

@@ -1,0 +1,44 @@
+<div class="circle">
+  <div class="square green"></div>
+  <div class="square yellow"></div>
+  <div class="square red"></div>
+</div>
+<style>
+  body {
+    background-color: #e3516e;
+    margin: 0;
+  }
+  .circle {
+    position: absolute;
+    top: 100;
+    left: 100;
+    inset: 0;
+    margin: auto;
+
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #f7f3d7;
+    overflow: hidden;
+  }
+  .square {
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1;
+  }
+  .green {
+    left: 0px;
+    top: 0px;
+    background-color: #51b5a9;
+  }
+  .yellow {
+    left: 100px;
+    top: 0px;
+    background-color: #fade8b;
+  }
+  .red {
+    left: 100px;
+    top: 100px;
+    background-color: #e3516e;
+  }
+</style>
