@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+  body{
+    background-color: #09042A;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .figure{
+    position: absolute;
+  }
+  .horisontal {
+	display: flex;
+  }
+  .ring{
+    width: 60px;
+    aspect-ratio: 1;
+    background-color: #09042A;
+    border: 10px solid #E78481;
+    border-radius: 50%;
+  }
+  .ring1{
+    transform: translateX(-25%);
+  }
+    
+  .ring2{
+    transform: translateX(25%);    
+  }
+  
+  .center{
+    position: absolute;
+    inset: 0;
+    width: 60px;
+    border: 10px solid #09042A;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #F5BB9C;
+  }
+  .ball1{
+    transform: translateY(-66.3%); 
+  }
+    .ball2{
+    transform: translateY(66.3%); 
+  }
+  .rectangle{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+  height: 48px;
+  background-color: #E78481}
+    </style>
+  </head>
+  <body>
+<div class="figure">
+  <div class="horisontal">
+    <div class="ring ring1"></div>
+    <div class="ring ring2"></div>
+  </div>
+      <div class="rectangle"></div>
+    <div class="center ball1"></div>
+      <div class="center ball2"></div>
+
+</div>
+  </body>
+</html>

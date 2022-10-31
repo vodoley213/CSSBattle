@@ -1,0 +1,45 @@
+<div class="tiger">
+  <div class="circle"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #0b2429;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .circle {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1;
+    background: radial-gradient(
+      #0b2429 25px,
+      #f3ac3c 25px 70px,
+      #0b2429 70px 90px,
+      #998235 90px
+    );
+    border-radius: 50%;
+  }
+  .circle::before,
+  .circle::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    margin-block: auto;
+    width: 0;
+    height: 0;
+    border: 80px solid transparent;
+  }
+  .circle::before {
+    inset: 0 0 0 -120px;
+    border-color: transparent #998235 transparent transparent;
+  }
+  .circle::after {
+    inset: 0 0 0 160px;
+    border-color: transparent transparent transparent #998235;
+  }
+</style>

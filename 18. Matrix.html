@@ -1,0 +1,46 @@
+<div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display:grid;
+    grid-template-columns: repeat(4,80px);
+    gap: 20px;
+    margin: 10px;
+    background-color: #5C434C;
+  }
+  .cell {
+    background: #F09462;
+    border-radius: 100% 0 0 0;
+  }
+  .cell:nth-of-type(2n){
+    background: #F5D6B4;
+  }
+    .cell:nth-of-type(5){
+    background: #F5D6B4;
+  }
+      .cell:nth-of-type(6){
+    background: #F09462
+  }
+      .cell:nth-of-type(7){
+    background: #F5D6B4;
+  }
+      .cell:nth-of-type(8){
+    background: #F09462
+  }
+</style>
+

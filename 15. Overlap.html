@@ -1,0 +1,36 @@
+<div class="figure">
+  <div class="circle one"></div>
+  <div class="circle two">
+    <div class="circle hidden-circle"></div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #09042a;
+    display: grid;
+    place-items: center;
+  }
+  .figure {
+    display: flex;
+  }
+  .circle {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+  .one {
+    background: #7b3f61;
+    transform: translateX(25px);
+    overflow: hidden;
+  }
+  .two {
+    background: #e78481;
+    transform: translateX(-25px);
+    overflow: hidden;
+  }
+  .hidden-circle {
+    background: #09042a;
+    transform: translateX(-100px);
+  }
+</style>

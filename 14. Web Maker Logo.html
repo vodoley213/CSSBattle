@@ -1,0 +1,50 @@
+<div class="figure">
+  <div class="triangle up"></div>
+  <div class="triangle up-red"></div>
+  <div class="triangle down"></div>
+  <div class="triangle down-orange"></div>
+  <!-- <div class="triangle down"></div> -->
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #f2f2b6;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .figure {
+    display: flex;
+    position: relative;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border: 75px solid transparent;
+  }
+  .triangle.up {
+    position: relative;
+  }
+  .up {
+    border-top: 130px solid #ff6d00;
+    transform: translate(10px, 38px);
+    position: relative;
+    z-index: 20;
+  }
+  .up-red {
+    position: absolute;
+    z-index: -1;
+    border-top: 130px solid #fd4602;
+    transform: translate(30px, 38px);
+  }
+  .down {
+    border-bottom: 130px solid #fd4602;
+    transform: translate(-30px, -38px);
+  }
+  .down-orange {
+    position: absolute;
+    z-index: -1;
+    border-bottom: 130px solid #ff6d00;
+    transform: translate(140px, -38px);
+  }
+</style>
