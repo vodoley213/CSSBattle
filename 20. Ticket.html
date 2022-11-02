@@ -1,0 +1,71 @@
+<div class="figure">
+	<div class="yellow"></div>
+	<div class="red"></div>
+  <div class="holes">
+  	<div class="hole hole2"></div>
+    <div class="hole hole1"></div>
+    <div class="hole hole3"></div>
+    <div class="hole hole4"></div>
+    <div class="hole hole5"></div>
+    <div class="hole hole6"></div>
+</div>
+</div>
+
+<style>
+  * {margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #62306D;
+    display: grid;
+    place-items: center;
+    
+  }
+  .figure{
+    display: flex;
+  }
+  .yellow {
+    width: 140px;
+    height: 100px;
+    background: #F7EC7D;
+  }
+    .red {
+    width: 60px;
+    height: 100px;
+    background: #E38F66;
+  }
+  .holes{
+    position: relative;
+  }
+  .hole{
+    position: absolute;
+    width: 40px;
+    aspect-ratio: 1;
+    background: #62306D;
+    border-radius: 50%;
+  }
+  .hole2{
+        transform: translate(-50%, -50%);
+  }
+    .hole1{
+        transform: translate(-550%, -50%);
+  }
+    .hole3{
+        transform: translate(-50%, 200%);
+  }
+    .hole4{
+        transform: translate(-550%, 200%);
+  }
+    .hole5{
+        width: 20px;
+        aspect-ratio: 1;
+        transform: translate(-350%, -50%);
+  }
+    .hole6{
+        width: 20px;
+        aspect-ratio: 1;
+        transform: translate(-350%, 450%);
+  }
+</style>

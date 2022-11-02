@@ -1,0 +1,34 @@
+<div class="figure">
+  <div class="circle">
+    <div class="ring"></div>
+  </div>
+</div>
+<style>
+  *{
+    margin:0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color:#E38F66;
+    display: grid;
+    place-items:center;
+  }
+  .circle{
+    width: 200px;
+    aspect-ratio:1;
+    border-radius: 50%;
+    background-color: #AA445F;
+    position: relative;
+  }
+  .ring{
+    position: absolute;
+    inset:0;
+    margin:auto;
+    width: 140px;
+    aspect-ratio:1;
+    border-radius: 50%;
+    border: 30px solid transparent;
+    border-color: #AA445F #F7EC7D #AA445F #F7EC7D;
+    transform: rotate(-45deg);
+  }
+</style>

@@ -1,0 +1,51 @@
+<div class="figure">
+  <div class="leaf1"></div>
+  <div class="leaf2"></div>
+  <div class="leaf3"></div>
+  <div class="leaf4"></div>
+</div>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #998235;
+    display: grid;
+    place-items: center;
+  }
+  .figure{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .leaf1 {
+    width: 80px;
+    height: 100px;
+    background: #1A4341;
+    border-radius: 0 17vh 0 17vh;
+    transform:translateY(20%);
+  }
+    .leaf2 {
+    width: 80px;
+    height: 62px;
+    background: #F3AC3C;
+    border-radius: 75% 0 75% 0;
+    transform:translateY(30%);
+  }
+    .leaf3 {
+    width: 80px;
+    height: 62px;
+    background: #F3AC3C;
+    border-radius: 0 75% 0 75%;
+    transform:translateY(30%);
+  }
+    .leaf4 {
+    width: 80px;
+    height: 100px;
+    background: #1A4341;
+    border-radius: 55% 0 55% 0;
+    transform:translateY(-20%);
+  }
+</style>

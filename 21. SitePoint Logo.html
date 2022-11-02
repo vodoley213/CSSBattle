@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="g orange"></div>
+  <div class="g blue"></div>
+
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #222;
+    display:grid;
+    place-items: center;
+  }
+  .g{
+    width: 100px;
+    height: 80px;
+    border-radius: 10px 0 10px 0;
+  }
+  .orange{
+    transform: rotate(-45deg) translate(-20%, 3%);
+    border-top: 30px solid #F2994A;
+    border-left: 30px solid #F2994A;
+  }
+  .blue{
+    transform: rotate(-45deg) translate(19%, -5%);
+    border-bottom: 30px solid #2D9CDB;
+    border-right: 30px solid #2D9CDB;
+  }
+
+</style>

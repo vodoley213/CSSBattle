@@ -1,0 +1,41 @@
+<div class="figure">
+  <div class="circle green"></div>
+  <div class="shape yellow reversed"></div>
+  <div class="shape green reversed"></div>
+  <div class="circle yellow"></div>
+  <div class="shape yellow"></div>
+  <div class="circle green"></div>
+  <div class="circle yellow"></div>
+  <div class="shape green"></div>
+</div>
+<style>
+  body{
+    background-color: #1A4341;
+    display: grid;
+    place-items: center;
+  }
+  .figure {
+	display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+  .circle{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+    .shape{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 0 0 50% 50% ;
+  }
+  .reversed{
+    transform:rotate(180deg);
+  }
+  .green{
+    background-color: #998235;
+  }
+  .yellow{
+    background-color:#F3AC3C;
+  }
+</style>

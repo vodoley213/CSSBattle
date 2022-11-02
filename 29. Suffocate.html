@@ -1,0 +1,49 @@
+<div class="figure">
+	<div class="square">
+      <div class="circle one"></div>
+      <div class="circle two"></div>
+      <div class="circle three"></div>
+      <div class="circle four"></div>
+  </div>
+ </div>
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: #F3AC3C;
+    display: grid;
+    place-items: center;
+  }
+  .square {
+    width: 200px;
+    aspect-ratio:1;
+    background: #1A4341;
+  }
+  .figure{
+    position: relative;
+  }
+    .circle {
+    position: absolute;
+    inset:0;
+    
+    width: 200px;
+    aspect-ratio:1;
+    border-radius: 50%;
+    margin: auto;
+    background: #F3AC3C;
+  }
+  .one{
+    transform: translate(-50%,-50%);
+  }
+    .two{
+    transform: translate(50%,50%);
+  }
+    .three{
+    transform: translate(-50%,50%);
+  }
+    .four{
+    transform: translate(50%,-50%);
+  }
+</style>
