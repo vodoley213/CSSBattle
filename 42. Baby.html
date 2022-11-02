@@ -1,0 +1,70 @@
+<div class="baby">
+  <div class="hairs">
+    <div class="hair"></div>
+    <div class="hair left"></div>
+  </div>
+  <div class="eyes">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+  <div class="mouth">
+    <div class="leeps"></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+
+    background-color: #293462;
+  }
+  .baby {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50% 50% 25% 25%;
+    background: #fe5f55;
+    overflow: hidden;
+  }
+  .hairs {
+    display: flex;
+    transform: translate(0%, -50%);
+  }
+  .hair {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff1c1;
+  }
+  .left {
+    transform: scale(-1, 1);
+  }
+  .eyes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    transform: translateY(-17%);
+  }
+  .mouth {
+    display: flex;
+    justify-content: center;
+  }
+  .eye {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff1c1;
+  }
+  .leeps {
+    transform: translateY(100%);
+
+    width: 40px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #fff1c1;
+  }
+</style>
