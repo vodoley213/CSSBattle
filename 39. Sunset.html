@@ -1,0 +1,42 @@
+<div class="figure"></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #1a4341;
+  }
+  .figure::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #998235;
+    z-index: -1;
+  }
+  .figure {
+    position: relative;
+
+    width: 250px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom,
+      transparent 22%,
+      #1a4341 22% 30%,
+      #f3ac3c 30% 38%,
+      #1a4341 38% 46%,
+      #f3ac3c 46% 54%,
+      #1a4341 54% 62%,
+      #f3ac3c 62% 70%,
+      #1a4341 70% 78%,
+      transparent 78%
+    );
+  }
+</style>

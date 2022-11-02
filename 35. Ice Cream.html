@@ -1,0 +1,35 @@
+<div class="figure">
+  <div class="icecream"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #293462;
+  }
+  .icecream {
+    transform: translateY(-17%);
+
+    width: 100px;
+    height: 150px;
+    border-radius: 100vh 100vh 100% 100%;
+    background: #fff1c1;
+  }
+  .icecream::before {
+    content: '';
+    position: absolute;
+
+    transform: translate(117%, 300%);
+
+    width: 30px;
+    height: 50px;
+    background: linear-gradient(to bottom, #a64942 20%, #fe5f55 20%);
+    border-radius: 0 0 10px 10px;
+  }
+</style>

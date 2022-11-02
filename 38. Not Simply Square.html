@@ -1,0 +1,36 @@
+<div class="figure"></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #293462;
+  }
+  .figure {
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+    background: #fff1c1;
+  }
+  .figure::before {
+    content: '';
+    position: absolute;
+
+    transform: translateY(200%);
+
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(to right, #fe5f55 75%, #a64942 75%);
+  }
+  .figure::after {
+    content: '';
+    position: absolute;
+
+    transform: translateX(200%);
+
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(to bottom, #fe5f55 75%, #a64942 75%);
+  }
+</style>

@@ -1,0 +1,39 @@
+<div class="figure"></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+
+    background-color: #1a4341;
+  }
+  .figure {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(to right, #998235 50%, transparent 40%);
+    position: relative;
+  }
+  .figure::before {
+    content: '';
+    position: absolute;
+    transform: translate(100%, 100%);
+
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #0b2429;
+  }
+  .figure::after {
+    content: '';
+    position: absolute;
+    transform: translate(74.5%, -25%);
+
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 0 150px 0 0;
+    background-color: #f3ac3c;
+  }
+</style>

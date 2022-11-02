@@ -1,0 +1,41 @@
+<div class="figure">
+  <div class="triangle"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+
+    background-color: #007065;
+  }
+  .triangle {
+    position: relative;
+
+    border-bottom: 100px solid #f5c181;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+  }
+  .triangle::before {
+    content: '';
+    position: absolute;
+
+    transform: translate(-50%, 50%);
+    z-index: -1;
+
+    border-bottom: 100px solid #00a79d;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+  }
+  .triangle::after {
+    content: '';
+    position: absolute;
+
+    border-bottom: 100px solid #ffeecf;
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    transform: translate(-50%, -50%);
+  }
+</style>

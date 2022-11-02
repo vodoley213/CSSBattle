@@ -1,0 +1,41 @@
+<div class="figure"></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+
+    background-color: #6592cf;
+  }
+  .figure {
+    position: relative;
+
+    width: 250px;
+    aspect-ratio: 1;
+    background: #243d83;
+  }
+  .figure::before {
+    content: '';
+    position: absolute;
+
+    inset: 0;
+    margin: auto;
+    width: 150px;
+    transform: rotate(15deg);
+    aspect-ratio: 1;
+    background: #6592cf;
+  }
+  .figure::after {
+    content: '';
+    position: absolute;
+
+    inset: 0;
+    margin: auto;
+    width: 75px;
+    transform: rotate(30deg);
+    aspect-ratio: 1;
+    background: #243d83;
+  }
+</style>

@@ -1,0 +1,43 @@
+<div class="figure">
+  <div class="one"></div>
+  <div class="two"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+
+    background-color: #ffffff;
+  }
+  .one {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    transform: rotate(45deg);
+    background: linear-gradient(
+      to right,
+      #f3ac3c 38%,
+      #fbe18c 38% 62%,
+      #f3ac3c 62%
+    );
+  }
+  .two {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    transform: rotate(-45deg);
+    background: linear-gradient(
+      to right,
+      #a3a368 38%,
+      #fbe18c 38% 62%,
+      #a3a368 62%
+    );
+  }
+</style>
