@@ -1,0 +1,50 @@
+<div class="soap">
+<div class="below"></div>
+</div>
+
+  
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #293462;
+  }
+  .soap {
+    position: relative;
+    margin-top: -5%;
+    /* transform: translateY(-10%); */
+
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background: #fe5f55;
+  }
+  /* .soap::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+    width: 140px;
+    height: 40px;
+    border-radius: 100vh;
+    background: #a64942;
+  } */
+  .below {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: -2;
+    transform: translateY(125%);
+
+    width: 200px;
+    height: 40px;
+    border-radius: 0 0 20px 20px;
+    background: blue;
+  }
+</style>

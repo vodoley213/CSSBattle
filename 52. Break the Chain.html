@@ -1,0 +1,71 @@
+<div class="chain">
+  <div class="tooth"></div>
+  <div class="tooth"></div>
+  <div class="tooth"></div>
+  <div class="tooth"></div>
+  <div class="tooth"></div>
+  <div class="tooth"></div>
+  <div class="tooth"></div>
+</div>
+<div class="circle"></div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #6592cf;
+  }
+  .chain {
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    margin-top: 30px;
+  }
+  .tooth:nth-of-type(3) {
+    margin-right: 30px;
+  }
+  .tooth {
+    width: 10px;
+    height: 50px;
+    background: #243d83;
+  }
+  .tooth::before {
+    content: '';
+    position: absolute;
+    transform: translate(-25%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #243d83;
+  }
+  .circle {
+    position: absolute;
+    transform: translate(-175%, -33%);
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eeb850;
+  }
+  .circle::before {
+    content: '';
+    position: absolute;
+    transform: translate(-85%, 50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eeb850;
+  }
+  .circle::after {
+    content: '';
+    position: absolute;
+    transform: translate(137%, 50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eeb850;
+  }
+</style>

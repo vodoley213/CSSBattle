@@ -1,0 +1,38 @@
+<div class="figure">
+  <div class="circle">
+    <div class="red"></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+
+    background-color: #293462;
+  }
+  .circle {
+    position: relative;
+
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #fff1c1;
+    overflow: hidden;
+  }
+
+  .red {
+    position: absolute;
+    transform: rotate(-45deg) translate(-21.2%, 52%);
+    width: 168px;
+    height: 140px;
+    border-color: #fe5f55;
+    border-left-width: 40px;
+    border-left-style: solid;
+    border-bottom-width: 110px;
+    border-bottom-style: solid;
+  }
+</style>

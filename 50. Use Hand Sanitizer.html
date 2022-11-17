@@ -1,0 +1,97 @@
+<div class="figure">
+  <div class="top"></div>
+  <div class="konchik"></div>
+  <div class="klapan"></div>
+  <div class="bottle-top"></div>
+  <div class="bottle"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #1a4341;
+  }
+  .figure {
+    display: grid;
+  }
+  .top {
+    position: relative;
+    transform: translateX(25px);
+
+    width: 150px;
+    height: 20px;
+    background-color: #f3ac3c;
+    border-radius: 10px;
+  }
+  .konchik {
+    position: absolute;
+    transform: translateX(155px);
+    width: 20px;
+    height: 40px;
+    background-color: #f3ac3c;
+    border-radius: 0 10px 10px 10px;
+  }
+  .konchik::before {
+    content: '';
+    position: absolute;
+    transform: translateY(50px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #998235;
+  }
+  .konchik::after {
+    content: '';
+    position: absolute;
+    transform: translateY(80px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #998235;
+  }
+  .klapan {
+    justify-self: center;
+
+    width: 20px;
+    height: 20px;
+    background-color: #f3ac3c;
+  }
+  .bottle-top {
+    justify-self: center;
+
+    width: 50px;
+    height: 20px;
+    background-color: #f3ac3c;
+    border-radius: 10px 10px 0 0;
+  }
+  .bottle {
+    position: relative;
+    justify-self: center;
+
+    width: 100px;
+    height: 140px;
+    background: linear-gradient(to bottom, #f3ac3c 40%, #998235 40%);
+    border-radius: 20px;
+  }
+  .bottle::before,
+  .bottle::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+  .bottle::before {
+    transform: translateY(30px);
+    border-radius: 50%;
+    background-color: #998235;
+  }
+  .bottle::after {
+    transform: translate(50px, 30px);
+    border-radius: 50%;
+    background-color: #f3ac3c;
+  }
+</style>
