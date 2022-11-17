@@ -1,0 +1,73 @@
+<div class="figure">
+  <div class="fives">
+    <div class="finger two"></div>
+    <div class="finger three"></div>
+    <div class="finger four"></div>
+    <div class="finger five"></div>
+    <div class="finger one"></div>
+  </div>
+  <div class="palm"></div>
+  <div class="hand"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #f9e492;
+  }
+  .figure {
+    display: grid;
+    justify-items: center;
+  }
+  .fives {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 1px;
+  }
+  .finger {
+    width: 20px;
+    border-radius: 10px;
+    background-color: #191919;
+  }
+  .one {
+    position: absolute;
+    transform: rotate(60deg) translate(39px, 26px);
+    width: 30px;
+    height: 76px;
+    border: 5px solid #f9e492;
+    border-radius: 20px;
+  }
+  .two {
+    height: 45px;
+  }
+  .three {
+    height: 55px;
+  }
+  .four {
+    height: 45px;
+  }
+  .five {
+    height: 35px;
+  }
+  .palm {
+    width: 100px;
+    height: 40px;
+    border-radius: 0 0 10px 10px;
+    background-color: #191919;
+  }
+  .hand {
+    width: 50px;
+    height: 45px;
+    border-radius: 0 0 10px 10px;
+    background-color: #191919;
+  }
+</style>

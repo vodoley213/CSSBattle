@@ -1,0 +1,55 @@
+<div class="figure">
+  <div class="stripes one"></div>
+  <div class="stripes two"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .figure {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom, #4F77FF 20%, 
+      #191919 20% 27%, 
+      #4F77FF 27% 47%, 
+      #191919 47% 53.5%,
+      #4F77FF 53.5% 73.5%,
+      #191919 73.5% 80%,
+      #4F77FF 80% 100%
+    );
+  }
+  .figure::before{
+    content:"";
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    width: 10px;
+    height: 100%;
+    background-color: #191919;
+  }
+  .stripes{
+    position: absolute;
+    top: 50%;
+    margin-inline: auto;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 10px solid #191919;
+  }
+  .one{
+    transform: translate(-43%,-50%);
+  }
+    .two{
+    transform: translate(14%,-50%);
+  }
+</style>

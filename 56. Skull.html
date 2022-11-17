@@ -1,0 +1,79 @@
+<div class="skeleton">
+  <div class="skull">
+    <div class="eyes">
+      <div class="eye one"></div>
+      <div class="eye two"></div>
+    </div>
+  </div>
+  <div class="jaw">
+    <div class="nose"></div>
+    <div class="beard">
+      <div class="v"></div>
+      <div class="v"></div>
+      <div class="v"></div>
+      <div></div>
+      <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+        }
+        body {
+          display: grid;
+          place-items: center;
+          background-color: #191919;
+        }
+        .skeleton {
+          display: grid;
+          justify-items: center;
+        }
+        .skull {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          width: 120px;
+          height: 100px;
+          border-radius: 100vh 100vh 50px 50px;
+          background: #4f77ff;
+        }
+        .eyes {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 7px;
+        }
+        .eye {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #191919;
+        }
+        .jaw {
+          display: grid;
+          justify-content: center;
+          width: 80px;
+          height: 30px;
+          border-radius: 0 0 20px 20px;
+          background: #4f77ff;
+        }
+        .nose {
+          justify-self: center;
+          transform: translateY(-45%);
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #191919;
+        }
+        .beard {
+          margin-left: 5px;
+          display: flex;
+          gap: 5px;
+        }
+        .v {
+          width: 10px;
+          height: 20px;
+          border-radius: 100vh;
+          background-color: #191919;
+        }
+      </style>
+    </div>
+  </div>
+</div>
