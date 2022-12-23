@@ -1,0 +1,39 @@
+<div class="summit">
+  <div class="circle"></div>
+  <div class="triangle"></div>
+</div>
+
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .summit {
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #f9e492;
+  }
+  .triangle {
+    position: absolute;
+    inset: 0;
+    transform: translate(50%, 100%) rotate(45deg);
+    width: 200px;
+    aspect-ratio: 1;
+    background: radial-gradient(circle 200px at 0px 0px, #191919 47%, #4F77FF 30%);
+    
+  }
+</style>

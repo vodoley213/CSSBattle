@@ -1,0 +1,29 @@
+<div class="ripples"></div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #0e2e2c;
+  }
+  .ripples {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at center,
+      #f3ac3c 20px,
+      #0e2e2c 20px 28px,
+      #f3ac3c 28px 40px,
+      #0e2e2c 40px 50px,
+      #998235 50px 60px,
+      #0e2e2c 60px 72px,
+      #f3ac3c 72px 80px,
+      #0e2e2c 80px 94px,
+      #f3ac3c 94px
+    );
+  }
+</style>

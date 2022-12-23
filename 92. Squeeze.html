@@ -1,0 +1,67 @@
+<div class="squeeze">
+  <div class="ball"></div>
+  <div class="ball left"></div>
+  <div class="ball right"></div>
+  <div class="stripe"></div>
+  <div class="stripe"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #6592cf;
+  }
+  .squeeze {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 191px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .ball {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #243d83;
+  }
+  .left {
+    left: -452px;
+  }
+  .right {
+    left: 326px;
+  }
+  .stripe {
+    position: relative;
+    width: 35px;
+    height: 38px;
+    background-color: #243d83;
+  }
+  .stripe::before {
+    content: '';
+    position: absolute;
+    transform: translate(2px, -22px);
+    width: 31px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #6592cf;
+  }
+  .stripe::after {
+    content: '';
+    position: absolute;
+    transform: translate(2px, 29px);
+    width: 31px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #6592cf;
+  }
+</style>

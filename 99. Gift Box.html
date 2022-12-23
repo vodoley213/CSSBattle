@@ -1,0 +1,44 @@
+<div class="gift">
+  <div class="ribbon"></div>
+  <div class=boxes></div>
+  <div class=boxes></div>
+</div>
+<style>
+  *, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #AC474B;
+  }
+  .boxes {
+    width: 140px;
+    height: 60px;
+    background: linear-gradient(to right, #FFFFFF 60px, #AC474B 60px 80px, #FFFFFF 80px);
+  }
+  .boxes+.boxes{
+    margin-top: 20px;
+  }
+  .ribbon{
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50% 50% 0 50%;
+    border: 10px solid #FFFFFF;
+  }
+  .ribbon::after{
+    content: '';
+    position: absolute;
+    top:-10px;
+    left:20px;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50% 50% 50% 0;
+    border: 10px solid #FFFFFF;
+  }
+</style>

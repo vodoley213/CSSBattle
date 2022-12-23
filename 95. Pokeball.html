@@ -1,0 +1,60 @@
+<div class="pokeball">
+  <div class="square"></div>
+  <div class="circle"></div>
+</div>
+<style>
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #6cb3a9;
+  }
+  .pokeball {
+    position: relative;
+    width: 400px;
+    height: 300px;
+  }
+  .square,
+  .circle,
+  .circle::before,
+  .circle::after {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+  .square {
+    width: 180px;
+    height: 20px;
+    background: #781728;
+  }
+  .circle {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom,
+      #d25b70 45%,
+      transparent 45% 55%,
+      #ffffff 55%
+    );
+  }
+  .circle::before {
+    content: '';
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #781728;
+  }
+  .circle::after {
+    content: '';
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #f6df96;
+  }
+</style>

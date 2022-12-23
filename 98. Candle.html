@@ -1,0 +1,53 @@
+<div class="candle">
+  <div class="flame"></div>
+  <div class="main"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #14313e;
+  }
+  .main {
+    position: relative;
+    top: 0px;
+    width: 80px;
+    height: 100px;
+    background-color: #ba3e46;
+  }
+  .main::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f3695a;
+    box-shadow: 0 100px #ba3e46;
+  }
+  .main::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    top: -25px;
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #14313e;
+  }
+  .flame {
+    position: relative;
+    top: -15px;
+    left: 40px;
+    z-index: 1;
+    width: 30px;
+    height: 50px;
+    border-radius: 60px 0 60px 0px;
+    background-color: #f3ac3c;
+  }
+</style>

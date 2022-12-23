@@ -1,0 +1,38 @@
+<div class="reflection">
+  <div class="circle"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reflection {
+    display: grid;
+    place-items: center;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(to bottom, #d25b70 50%, #6cb3a9 50%);
+  }
+  .circle {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom,
+      #f6df96 50%,
+      #6cb3a9 50% 57%,
+      #f6df96 58% 62%,
+      #6cb3a9 63% 70%,
+      #f6df96 70% 74%,
+      #6cb3a9 75% 82%,
+      #f6df96 82% 87%,
+      #6cb3a9 88% 95%,
+      #f6df96 95%
+    );
+  }
+</style>
