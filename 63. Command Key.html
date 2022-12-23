@@ -1,0 +1,75 @@
+<div class="figure">
+  <div class="part"></div>
+  <div class="part two"></div>
+  <div class="part three"></div>
+  <div class="part four"></div>
+  <div class="palka niz"></div>
+  <div class="palka verh"></div>
+  <div class="palka_vertical left"></div>
+  <div class="palka_vertical right"></div>
+</div>
+<style>
+  :root {
+    --center: 50px;
+  }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .figure {
+    display: grid;
+    grid-template-columns: 70px var(--center) 70px;
+    grid-template-rows: 70px var(--center) 70px;
+  }
+  .part {
+    width: 70px;
+    aspect-ratio: 1;
+    border: 10px solid #5dbcf9;
+    border-radius: 100px 100px 0 100px;
+  }
+  .two {
+    transform: scale(-1, 1);
+    grid-column: 3;
+  }
+  .three {
+    transform: scale(1, -1);
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .four {
+    transform: scale(-1, -1);
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .palka {
+    width: 50px;
+    height: 10px;
+    background-color: #5dbcf9;
+  }
+  .palka_vertical {
+    width: 10px;
+    height: 50px;
+    background-color: #5dbcf9;
+  }
+  .niz {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .verh {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+  }
+  .left {
+    justify-self: end;
+  }
+  .right {
+    grid-column: 3;
+    justify-self: start;
+  }
+</style>

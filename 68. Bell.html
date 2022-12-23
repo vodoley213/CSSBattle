@@ -1,0 +1,38 @@
+<div class="bell"></div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .bell {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 50% 10px 10px;
+    background: #e08027;
+  }
+  .bell::before,
+  .bell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    z-index: -1;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+  .bell::before {
+    top: -24px;
+    background-color: #f2ad43;
+  }
+  .bell::after {
+    top: 95px;
+    background-color: #824b20;
+  }
+</style>

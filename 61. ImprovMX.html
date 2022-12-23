@@ -1,0 +1,50 @@
+<div class="figure">
+  <div class="circle"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .figure {
+    display: flex;
+    justify-content: center;
+
+    width: 150px;
+    height: 200px;
+    border-radius: 100px 100px 28px 28px;
+    background: #f2ad43;
+    overflow: hidden;
+  }
+  .circle {
+    position: relative;
+    top: 90px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff58f;
+  }
+  .circle::before,
+  .circle::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .circle::before {
+    left: -145px;
+    background-color: #e08027;
+  }
+  .circle::after {
+    left: 5px;
+    background-color: #824b20;
+  }
+</style>

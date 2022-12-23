@@ -1,0 +1,94 @@
+<div class="hippo">
+  <div class="head">
+    <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+  </div>
+  <div class="mouth">
+    <div class="nostrils">
+      <div class="naris right"></div>
+      <div class="naris left"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .hippo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translateY(25px);
+    width: 130px;
+    height: 100px;
+    border-radius: 60px 60px 0 0;
+    background: #fe5f55;
+  }
+  .head::before,
+  .head::after {
+    content: '';
+    transform: translate(10px, -40px) rotate(-45deg);
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid #fe5f55;
+  }
+  .head::after {
+    transform: translate(-10px, -40px) rotate(45deg);
+  }
+  .eyes {
+    display: flex;
+    gap: 60px;
+    transform: translateY(5px);
+  }
+  .eye {
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+  .mouth {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-5px);
+    width: 150px;
+    height: 100px;
+    border-radius: 70px 70px 55px 55px;
+    background: #a64942;
+  }
+  .nostrils {
+    display: flex;
+    gap: 60px;
+    transform: translateY(20px);
+  }
+  .naris {
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+  .right {
+    transform: rotate(45deg);
+
+  }
+  .left {
+    transform: rotate(-45deg);
+  }
+</style>

@@ -1,0 +1,57 @@
+<div class="knob">
+  <div class="smile"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .knob {
+    position: relative;
+    width: 160px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #824b20;
+  }
+  .knob::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #e08027;
+  }
+  .smile {
+    position: absolute;
+    transform: rotate(-45deg);
+    inset: 0;
+    margin: auto;
+    width: 120px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    border-color: transparent transparent #fff58f #fff58f;
+  }
+  .smile::before,
+  .smile::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff58f;
+  }
+  .smile::before {
+    transform: translate(-6px, -5px);
+  }
+  .smile::after {
+    transform: translate(66px, 65px);
+  }
+</style>

@@ -1,0 +1,111 @@
+<div class="tiger">
+  <div class="face">
+    <div class="hair"></div>
+    <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+    <div class="mouth"></div>
+     <div class="nose"></div>   
+    <div class="lips">
+      <div class="lip right"></div>
+      <div class="lip left"></div>
+    </div>
+
+ </div>
+</div>
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: grid;
+    place-items: center;
+    background-color: #F3AC3C;
+  }
+  .tiger{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .face {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 80px 80px 64px 64px;
+    background: #998235;
+    overflow: hidden;
+  }
+  .tiger::before, 
+  .tiger::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid #998235;
+    background-color: #1A4341;
+  }
+  .tiger::after{
+    z-index: -1;
+    left: 100px;
+  }
+  .eyes{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-5px);
+    width: 100px;
+  }
+  .eye{
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #1A4341;
+  }
+  .hair{
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    width:0;
+    height:0;
+    border: 25px solid transparent;
+    border-top-color: #1A4341;
+      }
+  .mouth{
+    position: absolute;
+    top: 95px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px 20px 40px 40px;
+    background-color: white;
+  }
+  .lips{
+    display: flex;
+    position: absolute;
+  }
+  .lip{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: transparent transparent #1A4341 #1A4341;
+  }
+  .right{
+    transform: translate(5px,30px) rotate(-45deg);
+  }
+  .left{
+    transform: translate(-5px,30px) rotate(-45deg);
+  }
+  .nose{
+    position: absolute;
+    transform: translateY(20px);
+    width: 10px;
+    height: 20px;
+    background-color: #1A4341;
+  }
+</style>

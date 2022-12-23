@@ -1,0 +1,95 @@
+<div class="thebat">
+  <div class="rect">
+    <div class="hole">
+      <div class="mouse"></div>
+    </div>
+  </div>
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+  }
+  .thebat {
+    position: relative;
+    overflow: hidden;
+  }
+  .rect {
+    width: 240px;
+    height: 100px;
+    background: #f2ad43;
+  }
+  .circle {
+    position: absolute;
+    top: 0px;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #191919;
+  }
+  .circle1 {
+    left: -55px;
+  }
+  .circle1::after,
+  .circle2::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #191919;
+  }
+  .circle1::after {
+    left: 17px;
+  }
+  .circle2 {
+    left: 195px;
+  }
+  .circle2::before {
+    left: -117px;
+  }
+  .hole {
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    width: 80px;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+    background-color: #191919;
+  }
+  .mouse {
+    position: absolute;
+    inset: 0;
+    margin-top: auto;
+    margin-inline: auto;
+    width: 20px;
+    height: 20px;
+    background-color: #f2ad43;
+  }
+  .mouse::before,
+  .mouse::after {
+    content: '';
+    position: absolute;
+
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #f2ad43;
+  }
+  .mouse::before {
+    transform: translate(-50%, -50%);
+  }
+  .mouse::after {
+    transform: translate(150%, -50%);
+  }
+</style>

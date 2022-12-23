@@ -1,0 +1,74 @@
+<div class="froggy">
+  <div class="eyes">
+    <div class="eye right">
+      <div class="pupil"></div>
+    </div>
+    <div class="eye left">
+      <div class="pupil"></div>
+    </div>
+  </div>
+  <div class="nose">
+    <div class="nostril"></div>
+    <div class="nostril left"></div>
+  </div>
+  <div class="face"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #293462;
+  }
+  .eyes {
+    display: flex;
+  }
+  .eye {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 15px;
+
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fe5f55;
+  }
+  .pupil {
+    width: 30px;
+    aspect-ratio: 1;
+    z-index: 1;
+    border-radius: 50%;
+    background: radial-gradient(#293462 5px, #fff1c1 0);
+  }
+  .nose {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .nostril {
+    transform: translateY(40px);
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #293462;
+  }
+  .right {
+    left: 15px;
+  }
+  .left {
+    left: 35px;
+  }
+  .face {
+    position: relative;
+    top: -20px;
+    width: 150px;
+    height: 100px;
+    border-radius: 50px;
+    background: radial-gradient(circle at 50%-130px, #fe5f55 200px, #a64942 0);
+  }
+</style>

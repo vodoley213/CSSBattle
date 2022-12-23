@@ -1,0 +1,83 @@
+<div class="sheep">
+  <div class="temp">
+    <div class="hair"></div>
+    <div class="hair"></div>
+  </div>
+  <div class="temp2">
+    <div class="hair"></div>
+    <div class="hair"></div>
+  </div>
+  <div class="temp3">
+    <div class="hair"></div>
+    <div class="hair"></div>
+  </div>
+  <div class="temp4">
+    <div class="hair"></div>
+    <div class="hair"></div>
+  </div>
+  <div class="face">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #243d83;
+  }
+  .temp,
+  .temp2,
+  .temp3,
+  .temp4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height: 170px;
+  }
+  .hair {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6592cf;
+  }
+  .temp2 {
+    position: absolute;
+    transform: translateY(-100%) rotate(90deg);
+  }
+  .temp3 {
+    height: 167px;
+    position: absolute;
+    transform: translateY(-100%) rotate(45deg);
+  }
+  .temp4 {
+    height: 167px;
+    position: absolute;
+    transform: translateY(-100%) rotate(-45deg);
+  }
+  .face {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100px;
+    height: 90px;
+    border-radius: 0 0 50px 50px;
+    border: 20px solid;
+    border-color: transparent #6592cf #6592cf #6592cf;
+  }
+  .eye {
+    transform: translateY(5px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6592cf;
+  }
+</style>

@@ -1,0 +1,85 @@
+<div class="elefant">
+  <div class="face">
+    <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+    <div class="mustache"></div>
+    <div class="nose"></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #998235;
+  }
+  .face {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #1a4341;
+  }
+  .eyes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    place-items: center;
+    height: 100%;
+  }
+  .eye {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #1a4341 50%, transparent 50%),
+      radial-gradient(#0b2429 35%, #998235 35%);
+  }
+  .mustache {
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 0;
+    right: 0;
+    top: 130px;
+    margin: auto;
+    width: 120px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color: #ffffff #ffffff transparent transparent;
+  }
+  .nose {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    margin-inline: auto;
+    width: 40px;
+    height: 120px;
+    border-radius: 100vh 100vh 0 0;
+    background: #0b2429;
+  }
+  .face::before,
+  .face::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 80px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #0b2429;
+  }
+  .face::before {
+    left: -60px;
+    box-shadow: inset 16px 0 0 0 #1a4341;
+  }
+  .face::after {
+    right: -60px;
+    box-shadow: inset -16px 0 0 0 #1a4341;
+  }
+</style>
