@@ -1,0 +1,50 @@
+<div class="figure">
+  <div class="center"></div>
+</div>
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #f3ac3c;
+  }
+  .figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 160px;
+    aspect-ratio: 1;
+    border: 30px solid #998235;
+    outline: 0;
+  }
+  .figure::before {
+    content: '';
+    position: absolute;
+    transform: translate(-65px);
+    width: 32px;
+    height: 30px;
+    background-color: #f3ac3c;
+  }
+  .figure::after {
+    content: '';
+    position: absolute;
+    transform: translateY(-65px);
+    width: 30px;
+    height: 32px;
+    background-color: #f3ac3c;
+  }
+  .center {
+    width: 30px;
+    height: 30px;
+    background-color: #1a4341;
+  }
+  .figure {
+    transform: rotate(45deg);
+  }
+</style>

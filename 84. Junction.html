@@ -1,0 +1,58 @@
+<div class="junction">
+  <div class="horisontal">
+    <div class="stick"></div>
+    <div class="stick left"></div>
+  </div>
+  <div class="vertical">
+    <div class="stick_vr"></div>
+    <div class="stick_vr bottom"></div>
+  </div>
+</div>
+<style>
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-items: center;
+    background-color: #191919;
+  }
+  .junction {
+    display: grid;
+    place-items: center;
+    width: 400px;
+    height: 300px;
+  }
+  .horisontal {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .stick {
+    width: 180px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    background: #a64942;
+  }
+  .stick_vr {
+    width: 130px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    background: #fe5f55;
+  }
+  .left {
+    transform: scale(-1, 1);
+  }
+  .vertical {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  .bottom {
+    transform: scale(-1, 1);
+  }
+</style>

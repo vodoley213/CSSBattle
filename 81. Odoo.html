@@ -1,0 +1,47 @@
+<div class="oddo">
+  <div class="o one"></div>
+  <div class="o"></div>
+  <div class="o"></div>
+  <div class="o"></div>
+</div>
+<style>
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    background-color: #191919;
+  }
+  .oddo {
+    display: flex;
+    gap: 2px;
+    transform: translateY(12px);
+  }
+  .o {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid #8f8f8f;
+  }
+  .one {
+    border-color: #714b67;
+  }
+  .o:nth-of-type(2) {
+    position: relative;
+  }
+  .o:nth-of-type(2)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: -40px;
+    width: 20px;
+    height: 55px;
+    border-radius: 20px 20px 0 0;
+    background-color: #8f8f8f;
+  }
+</style>
